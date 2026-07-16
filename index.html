@@ -143,20 +143,20 @@ section[id]{scroll-margin-top:var(--header-h);}
 .services__head{max-width:38rem;transform:translateY(-2.2rem);position:relative;z-index:3;}
 .services__title{font-size:var(--step-5);}
 .services__intro{color:var(--ink-soft);margin-top:1rem;font-size:1.05rem;}
-.services__groups{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem 5rem;}
-.services__group h3{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:var(--step-2);color:var(--magenta);margin-bottom:.5rem;}
-.menu__row{display:block;padding-block:1.05rem;border-bottom:1px solid var(--line);transition:padding-left .45s var(--ease-water),background .45s var(--ease-water);}
-.menu__row:hover,.menu__row:focus-visible{padding-left:.6rem;background:linear-gradient(90deg,var(--paper-2),transparent);}
-li:first-child>.menu__row{padding-top:.3rem;}
-.menu__top{display:flex;align-items:baseline;gap:.6rem;}
-.menu__name{font-family:var(--font-display);font-weight:500;font-size:1.15rem;flex-shrink:0;}
-.menu__leader{flex:1 1 auto;border-bottom:1.5px dotted var(--line);transform:translateY(-.35rem);min-width:1.5rem;}
-.menu__meta{flex-shrink:0;display:flex;align-items:baseline;gap:.6rem;font-weight:700;font-variant-numeric:tabular-nums;}
-.menu__time{font-size:.78rem;font-weight:600;color:var(--ink-faint);}
-.menu__price{color:var(--magenta);font-size:1.05rem;}
-.menu__desc{display:block;margin-top:.3rem;font-size:.88rem;color:var(--ink-soft);max-width:34rem;}
+.services__groups{margin-top:2.75rem;display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,5.5rem);align-items:start;}
+.services__col{display:flex;flex-direction:column;gap:clamp(2.5rem,4vw,3.25rem);}
+.services__group h3{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:var(--step-2);color:var(--magenta);margin-bottom:.4rem;}
+.menu__row{display:grid;grid-template-columns:1fr auto;column-gap:1.25rem;row-gap:.15rem;align-items:baseline;padding-block:1.05rem;border-top:1px solid var(--line);transition:padding-left .45s var(--ease-water),background .45s var(--ease-water);}
+.menu__row:hover,.menu__row:focus-visible{padding-left:.55rem;background:linear-gradient(90deg,var(--paper-2),transparent 82%);}
+.menu__top{display:contents;}
+.menu__name{grid-column:1;grid-row:1;font-family:var(--font-display);font-weight:500;font-size:1.18rem;line-height:1.2;}
+.menu__leader{display:none;}
+.menu__meta{display:contents;}
+.menu__price{grid-column:2;grid-row:1;justify-self:end;color:var(--magenta);font-size:1.1rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.menu__time{grid-column:2;grid-row:2;justify-self:end;font-size:.76rem;font-weight:600;letter-spacing:.02em;color:var(--ink-faint);white-space:nowrap;}
+.menu__desc{grid-column:1;grid-row:2;font-size:.9rem;color:var(--ink-soft);max-width:38ch;}
 .menu__row:hover .menu__price,.menu__row:focus-visible .menu__price{color:var(--magenta-deep);}
-@media (max-width:840px){.services__groups{grid-template-columns:1fr;gap:2.75rem;}}
+@media (max-width:840px){.services__groups{grid-template-columns:1fr;gap:2.5rem;}.services__col{gap:2.5rem;}}
 .about{background:var(--paper-2);position:relative;overflow:hidden;}
 .about__grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2.5rem,6vw,5rem);align-items:start;}
 .about__visual{position:relative;padding-top:clamp(0px,2vw,2.5rem);}
@@ -310,65 +310,69 @@ li:first-child>.menu__row{padding-top:.3rem;}
 <p class="services__intro">Alle priser er faste, ingen overraskelser når du setter deg i stolen. Trykk på en behandling for å bestille time direkte.</p>
 </div>
 <div class="services__groups">
+<div class="services__col">
 <div class="services__group reveal" style="--d:.05s">
 <h3>Nye negler</h3>
 <ul class="menu">
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Gel på naturnegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t</span><span class="menu__price">1 100 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Gel på naturnegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">1 100 kr</span><span class="menu__time">1 t</span></span></span>
 <span class="menu__desc">Styrker tynne og myke negler.</span>
 </a></li>
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Forlengelse av egne negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t 40 min</span><span class="menu__price">1 249 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Forlengelse av egne negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">1 249 kr</span><span class="menu__time">1 t 40 min</span></span></span>
 <span class="menu__desc">Egne negler bygget lengre og sterkere med gele.</span>
 </a></li>
 </ul>
 </div>
 <div class="services__group reveal" style="--d:.1s">
-<h3>Påfyll og vedlikehold</h3>
-<ul class="menu">
-<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Gelelakk</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">50 min</span><span class="menu__price">649 kr</span></span></span>
-<span class="menu__desc">For sterke, naturlige negler som bare trenger farge.</span>
-</a></li>
-<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Påfyll gelenegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t 30 min</span><span class="menu__price">1 099 kr</span></span></span>
-<span class="menu__desc">Innen 5 uker fra forrige time.</span>
-</a></li>
-<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Reparasjon</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">30 min</span><span class="menu__price">199 kr / negl</span></span></span>
-<span class="menu__desc">Knekt en negl? Ikke vent til neste time.</span>
-</a></li>
-<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Fjerning</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">45 min</span><span class="menu__price">399 kr</span></span></span>
-<span class="menu__desc">Skånsom fjerning av gelenegler.</span>
-</a></li>
-</ul>
-</div>
-<div class="services__group reveal" style="--d:.05s">
 <h3>Design</h3>
 <ul class="menu">
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Enkel design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">15 min</span><span class="menu__price">149 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Enkel design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">149 kr</span><span class="menu__time">15 min</span></span></span>
 <span class="menu__desc">Chrome, ombré eller diamanter på inntil 4 fingre.</span>
 </a></li>
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Avansert design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">20 min</span><span class="menu__price">249 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Avansert design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">249 kr</span><span class="menu__time">20 min</span></span></span>
 <span class="menu__desc">Fransk, stamping eller dekor på mer enn 4 fingre.</span>
 </a></li>
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Ekstra lange negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">20 min</span><span class="menu__price">199 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Ekstra lange negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">199 kr</span><span class="menu__time">20 min</span></span></span>
 <span class="menu__desc">For deg som vil ha enda mer lengde.</span>
 </a></li>
 </ul>
 </div>
+</div>
+<div class="services__col">
 <div class="services__group reveal" style="--d:.1s">
+<h3>Påfyll og vedlikehold</h3>
+<ul class="menu">
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Gelelakk</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">649 kr</span><span class="menu__time">50 min</span></span></span>
+<span class="menu__desc">For sterke, naturlige negler som bare trenger farge.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Påfyll gelenegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">1 099 kr</span><span class="menu__time">1 t 30 min</span></span></span>
+<span class="menu__desc">Innen 5 uker fra forrige time.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Reparasjon</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">199 kr / negl</span><span class="menu__time">30 min</span></span></span>
+<span class="menu__desc">Knekt en negl? Ikke vent til neste time.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Fjerning</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">399 kr</span><span class="menu__time">45 min</span></span></span>
+<span class="menu__desc">Skånsom fjerning av gelenegler.</span>
+</a></li>
+</ul>
+</div>
+<div class="services__group reveal" style="--d:.15s">
 <h3>Annet</h3>
 <ul class="menu">
 <li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
-<span class="menu__top"><span class="menu__name">Manikyr</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">30 min</span><span class="menu__price">499 kr</span></span></span>
+<span class="menu__top"><span class="menu__name">Manikyr</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__price">499 kr</span><span class="menu__time">30 min</span></span></span>
 <span class="menu__desc">Klassisk manikyr, uten gele.</span>
 </a></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
