@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<script>document.documentElement.classList.add('js')</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JK Nails | Neglesalong i Kristiansand | Gelenegler med dual forms</title>
+<meta name="description" content="JK Nails er en neglesalong i Kvadraturen, Kristiansand. Kristina er sertifisert negletekniker og en av få i Norge som jobber med dual forms. Book time i dag.">
+<meta name="theme-color" content="#A0244F">
+<meta property="og:title" content="JK Nails | Neglesalong i Kristiansand">
+<meta property="og:description" content="Gelenegler med dual forms. Sertifisert negletekniker i Kvadraturen, Kristiansand. 4,9 av 33 anmeldelser.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nb_NO">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3CradialGradient id='g' cx='35%25' cy='30%25' r='75%25'%3E%3Cstop offset='0%25' stop-color='%23F4D0CC'/%3E%3Cstop offset='100%25' stop-color='%23A0244F'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23g)' d='M50 6C68 6 92 20 94 42C96 66 76 94 50 94C24 94 6 68 8 44C10 20 32 6 50 6Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF1EA;
+  --paper-2:#F5E3D9;
+  --blush:#F4D0CC;
+  --rose:#E0879C;
+  --magenta:#A0244F;
+  --magenta-deep:#7A1B3D;
+  --ink:#2B1620;
+  --ink-soft:#664450;
+  --ink-faint:#7F5C66;
+  --line:rgba(43,22,32,0.14);
+  --shadow:0 20px 60px -25px rgba(43,22,32,0.35);
+  --ease-water:cubic-bezier(.19,.87,.32,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+  --font-display:'Fraunces',ui-serif,Georgia,serif;
+  --font-body:'Manrope',ui-sans-serif,system-ui,sans-serif;
+  --container:1220px;
+  --header-h:84px;
+  --step--1:clamp(.83rem,.8rem + .15vw,.95rem);
+  --step-0:1rem;
+  --step-1:clamp(1.2rem,1.1rem + .5vw,1.5rem);
+  --step-2:clamp(1.5rem,1.3rem + 1vw,2rem);
+  --step-3:clamp(1.9rem,1.5rem + 2vw,2.75rem);
+  --step-4:clamp(2.4rem,1.8rem + 3vw,3.75rem);
+  --step-5:clamp(3rem,2.2rem + 4.5vw,5.5rem);
+  --step-6:clamp(3rem,2rem + 6vw,7.5rem);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;}
+body{min-height:100svh;font-family:var(--font-body);background:var(--paper);color:var(--ink);font-size:16px;line-height:1.6;font-weight:400;overflow-x:hidden;}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;}
+ul{list-style:none;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:500;line-height:1.05;letter-spacing:-.01em;text-wrap:balance;}
+p{max-width:60ch;}
+::selection{background:var(--magenta);color:var(--paper);}
+:focus-visible{outline:2px solid var(--magenta);outline-offset:3px;border-radius:2px;}
+html{scrollbar-color:var(--rose) var(--paper-2);scrollbar-width:thin;}
+::-webkit-scrollbar{width:12px;}
+::-webkit-scrollbar-track{background:var(--paper-2);}
+::-webkit-scrollbar-thumb{background:var(--rose);border-radius:10px;border:3px solid var(--paper-2);}
+::-webkit-scrollbar-thumb:hover{background:var(--magenta);}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,5vw,3rem);}
+.skip-link{position:fixed;top:-100px;left:1rem;background:var(--ink);color:var(--paper);padding:.8em 1.2em;border-radius:6px;z-index:999;transition:top .3s var(--ease-soft);}
+.skip-link:focus{top:1rem;}
+.grain{position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.05;mix-blend-mode:overlay;filter:url(#grain);background:#fff;}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--ease-water),transform 1.1s var(--ease-water);transition-delay:var(--d,0s);}
+.js .reveal.is-visible{opacity:1;transform:translateY(0);}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.btn{display:inline-flex;align-items:center;gap:.6em;font-family:var(--font-body);font-weight:700;font-size:var(--step--1);letter-spacing:.02em;padding:1.05em 1.8em;border-radius:100px;transition:transform .5s var(--ease-water),box-shadow .5s var(--ease-water),background .4s var(--ease-soft);}
+.btn--primary{background:var(--magenta);color:var(--paper);box-shadow:0 14px 30px -12px rgba(160,36,79,.55);}
+.btn--primary:hover{background:var(--magenta-deep);transform:translateY(-3px) scale(1.03);box-shadow:0 20px 36px -14px rgba(122,27,61,.6);}
+.btn--small{padding:.75em 1.4em;font-size:.82rem;}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:200;padding-block:1.1rem;transition:background .5s var(--ease-soft),padding .5s var(--ease-soft),box-shadow .5s var(--ease-soft);}
+.site-header.is-scrolled{background:rgba(251,241,234,.86);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line);padding-block:.7rem;}
+.site-header__inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:var(--font-display);font-style:italic;font-weight:500;font-size:1.3rem;flex-shrink:0;}
+.brand__mark{width:26px;height:26px;transition:transform .6s var(--ease-water);}
+.brand:hover .brand__mark{transform:rotate(18deg) scale(1.08);}
+.site-nav ul{display:flex;gap:clamp(1rem,2vw,2.1rem);}
+.site-nav a{font-size:.92rem;font-weight:600;position:relative;padding-block:.3rem;}
+.site-nav a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--magenta);transition:right .45s var(--ease-water);}
+.site-nav a:hover::after,.site-nav a.is-active::after{right:0;}
+.site-nav a.is-active{color:var(--magenta);}
+@media (max-width:840px){.site-nav{display:none;}}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-block:calc(var(--header-h) + 3rem) 4rem;isolation:isolate;}
+.hero__wash{position:absolute;inset:0;z-index:-1;overflow:hidden;background:var(--paper);}
+.parallax{position:absolute;transform:translate(calc(var(--mx,0) * var(--depth,.5) * 1px),calc(var(--my,0) * var(--depth,.5) * 1px));transition:transform 1.4s var(--ease-water);}
+.blob{position:absolute;inset:0;border-radius:42% 58% 63% 37%/41% 44% 56% 59%;filter:blur(50px);opacity:.55;will-change:transform,border-radius;animation:blobMorphA 52s var(--ease-soft) infinite;}
+.parallax--1{width:52vw;height:52vw;top:-16%;left:-10%;}
+.parallax--2{width:40vw;height:40vw;top:4%;right:-14%;}
+.parallax--3{width:36vw;height:36vw;bottom:-18%;left:20%;}
+.parallax--4{width:24vw;height:24vw;bottom:2%;right:6%;}
+.blob--1{background:radial-gradient(circle at 35% 30%,var(--blush),var(--rose) 60%,transparent 75%);}
+.blob--2{background:radial-gradient(circle at 60% 40%,var(--rose),var(--magenta) 65%,transparent 78%);animation-name:blobMorphB;animation-duration:60s;opacity:.4;}
+.blob--3{background:radial-gradient(circle at 40% 60%,var(--blush),var(--paper-2) 70%,transparent 80%);animation-name:blobMorphC;animation-duration:38s;opacity:.6;}
+.blob--4{background:radial-gradient(circle at 50% 50%,var(--rose),transparent 75%);animation-name:blobMorphA;animation-duration:44s;animation-delay:-12s;opacity:.35;}
+@keyframes blobMorphA{0%,100%{transform:translate(0,0) scale(1);border-radius:42% 58% 63% 37%/41% 44% 56% 59%;}33%{transform:translate(3%,4%) scale(1.06);border-radius:58% 42% 39% 61%/54% 60% 40% 46%;}66%{transform:translate(-2%,-3%) scale(.97);border-radius:48% 52% 57% 43%/60% 38% 62% 40%;}}
+@keyframes blobMorphB{0%,100%{transform:translate(0,0) scale(1);border-radius:63% 37% 41% 59%/48% 62% 38% 52%;}50%{transform:translate(-4%,3%) scale(1.08);border-radius:40% 60% 58% 42%/55% 45% 55% 45%;}}
+@keyframes blobMorphC{0%,100%{transform:translate(0,0) scale(1);border-radius:50% 50% 38% 62%/62% 42% 58% 38%;}50%{transform:translate(3%,-4%) scale(1.05);border-radius:62% 38% 55% 45%/40% 58% 42% 60%;}}
+.polish-dot{position:absolute;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff9 0%,transparent 40%),var(--c);box-shadow:0 10px 24px -10px rgba(43,22,32,.4);animation:floatDot 8s var(--ease-soft) infinite;}
+.pd--1{width:22px;height:22px;top:24%;left:6%;animation-duration:8s;}
+.pd--2{width:13px;height:13px;top:66%;left:13%;animation-duration:6.5s;animation-delay:-2s;}
+.pd--3{width:18px;height:18px;top:16%;right:22%;animation-duration:7.5s;animation-delay:-1s;}
+.pd--4{width:11px;height:11px;top:74%;right:14%;animation-duration:6s;animation-delay:-3.5s;}
+.pd--5{width:15px;height:15px;top:44%;right:6%;animation-duration:7s;animation-delay:-4.5s;}
+@keyframes floatDot{0%,100%{transform:translateY(0) translateX(0);}50%{transform:translateY(-16px) translateX(6px);}}
+.hero__content{max-width:42rem;}
+.eyebrow{font-size:var(--step--1);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--magenta);margin-bottom:1.1rem;display:block;}
+.hero__headline{font-size:var(--step-6);}
+.hero__headline .line{display:block;}
+section[id]{scroll-margin-top:var(--header-h);}
+.hero__headline .line__inner{display:block;}
+.js .hero__headline .line__inner{opacity:0;transform:translateY(100%) rotate(1deg);animation:lineUp 1.3s var(--ease-water) forwards;animation-delay:var(--d,0s);}
+@keyframes lineUp{to{opacity:1;transform:translateY(0) rotate(0);}}
+.word-water{font-style:italic;background:linear-gradient(100deg,var(--magenta) 0%,var(--magenta-deep) 50%,var(--magenta) 100%);background-clip:text;-webkit-background-clip:text;color:var(--magenta);}
+.hero__sub{font-size:clamp(1.05rem,.95rem + .5vw,1.25rem);color:var(--ink-soft);margin-top:1.6rem;max-width:34rem;}
+.hero__cta{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.6rem;}
+.hero__meta{font-size:var(--step--1);color:var(--ink-soft);display:flex;align-items:center;gap:.4em;}
+.stars{color:var(--magenta);letter-spacing:.05em;}
+.hero__cue{position:absolute;left:clamp(1.25rem,5vw,3rem);bottom:2rem;display:flex;align-items:center;gap:.6rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
+.hero__cue i{display:block;width:1px;height:34px;background:linear-gradient(var(--ink-faint),transparent);animation:cuePulse 2.6s ease-in-out infinite;}
+@keyframes cuePulse{0%,100%{opacity:.3;}50%{opacity:1;}}
+@media (max-width:840px){.hero__cue{display:none;}}
+.marquee{position:relative;border-block:1px solid var(--line);padding-block:1.4rem;overflow:hidden;background:var(--paper-2);}
+.marquee__track{display:flex;width:max-content;gap:2.5rem;animation:marqueeScroll 34s linear infinite;}
+.marquee__track span{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(1.3rem,1rem + 2vw,2.1rem);white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--ink);}
+.marquee__track .dot-sep{font-family:var(--font-body);font-style:normal;-webkit-text-stroke:0;color:var(--magenta);font-size:.9rem;}
+@supports not (-webkit-text-stroke:1px black){.marquee__track span{color:var(--ink-faint);}}
+@keyframes marqueeScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){.marquee__track{animation:none;}}
+.section{padding-block:clamp(4rem,8vw,7rem);}
+.services__head{max-width:38rem;transform:translateY(-2.2rem);position:relative;z-index:3;}
+.services__title{font-size:var(--step-5);}
+.services__intro{color:var(--ink-soft);margin-top:1rem;font-size:1.05rem;}
+.services__groups{margin-top:2.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem 5rem;}
+.services__group h3{font-family:var(--font-display);font-style:italic;font-weight:500;font-size:var(--step-2);color:var(--magenta);margin-bottom:.5rem;}
+.menu__row{display:block;padding-block:1.05rem;border-bottom:1px solid var(--line);transition:padding-left .45s var(--ease-water),background .45s var(--ease-water);}
+.menu__row:hover,.menu__row:focus-visible{padding-left:.6rem;background:linear-gradient(90deg,var(--paper-2),transparent);}
+li:first-child>.menu__row{padding-top:.3rem;}
+.menu__top{display:flex;align-items:baseline;gap:.6rem;}
+.menu__name{font-family:var(--font-display);font-weight:500;font-size:1.15rem;flex-shrink:0;}
+.menu__leader{flex:1 1 auto;border-bottom:1.5px dotted var(--line);transform:translateY(-.35rem);min-width:1.5rem;}
+.menu__meta{flex-shrink:0;display:flex;align-items:baseline;gap:.6rem;font-weight:700;font-variant-numeric:tabular-nums;}
+.menu__time{font-size:.78rem;font-weight:600;color:var(--ink-faint);}
+.menu__price{color:var(--magenta);font-size:1.05rem;}
+.menu__desc{display:block;margin-top:.3rem;font-size:.88rem;color:var(--ink-soft);max-width:34rem;}
+.menu__row:hover .menu__price,.menu__row:focus-visible .menu__price{color:var(--magenta-deep);}
+@media (max-width:840px){.services__groups{grid-template-columns:1fr;gap:2.75rem;}}
+.about{background:var(--paper-2);position:relative;overflow:hidden;}
+.about__grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2.5rem,6vw,5rem);align-items:start;}
+.about__visual{position:relative;padding-top:clamp(0px,2vw,2.5rem);}
+.about__portrait{width:100%;aspect-ratio:1/1.05;border-radius:44% 56% 61% 39%/46% 41% 59% 54%;background:radial-gradient(circle at 32% 26%,var(--blush),var(--rose) 55%,var(--magenta) 100%);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);animation:blobMorphA 50s var(--ease-soft) infinite;}
+.about__portrait span{font-family:var(--font-display);font-style:italic;font-size:clamp(3rem,4vw + 1.5rem,5.5rem);color:var(--paper);text-shadow:0 2px 18px rgba(43,22,32,.25);}
+.about__badge{position:absolute;right:-1.2rem;bottom:-1.6rem;background:var(--paper);border:1px solid var(--line);border-radius:50%;width:clamp(6.5rem,10vw,8.5rem);aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--shadow);}
+.about__badge-num{font-family:var(--font-display);font-size:clamp(2.2rem,3vw,2.8rem);color:var(--magenta);line-height:1;}
+.about__badge-label{font-size:.68rem;letter-spacing:.04em;color:var(--ink-soft);max-width:6rem;margin-top:.2rem;}
+.about h2{font-size:var(--step-4);max-width:16ch;}
+.about__text p{color:var(--ink-soft);margin-top:1.3rem;font-size:1.05rem;max-width:42rem;}
+.about__text p:first-of-type::first-letter{font-family:var(--font-display);font-size:3.2em;float:left;line-height:.8;padding-right:.1em;padding-top:.05em;color:var(--magenta);}
+.about__creds{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;}
+.about__creds li{border:1px solid var(--line);border-radius:100px;padding:.6em 1.2em;font-size:.82rem;font-weight:600;color:var(--ink-soft);background:var(--paper);}
+@media (max-width:840px){.about__grid{grid-template-columns:1fr;}.about__visual{max-width:16rem;margin-inline:auto;}}
+.gallery__head{max-width:34rem;}
+.gallery__intro{color:var(--ink-soft);margin-top:1rem;font-size:1.05rem;}
+.gallery__grid{margin-top:3rem;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:11rem;gap:1.35rem;}
+.gallery__card{position:relative;border-radius:30px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(var(--rot,0deg));transition:transform .6s var(--ease-water),box-shadow .6s var(--ease-water);}
+.gallery__card:hover{transform:rotate(0deg) translateY(-6px) scale(1.015);box-shadow:0 26px 50px -20px rgba(43,22,32,.4);}
+.gallery__card--tall{grid-row:span 2;}
+.gallery__swatch{position:absolute;inset:0;}
+.gallery__label{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.15rem 1.05rem;background:linear-gradient(0deg,rgba(43,22,32,.6),transparent 70%);color:var(--paper);font-weight:700;font-size:.92rem;}
+.gallery__label span{display:block;font-weight:500;font-size:.7rem;opacity:.9;margin-top:.15rem;}
+.gallery__swatch--chrome{background:linear-gradient(120deg,var(--paper) 0%,var(--blush) 22%,var(--rose) 42%,var(--paper) 56%,var(--magenta) 78%,var(--blush) 100%);background-size:220% 220%;animation:shine 9s ease-in-out infinite;}
+.gallery__swatch--fransk{background:var(--blush);}
+.gallery__swatch--fransk::after{content:'';position:absolute;left:-12%;right:-12%;bottom:-58%;height:72%;background:var(--paper);border-radius:50%;box-shadow:0 -2px 0 rgba(43,22,32,.06);}
+.gallery__swatch--ombre{background:linear-gradient(160deg,var(--blush),var(--rose) 55%,var(--magenta) 100%);}
+.gallery__swatch--diamant{background:radial-gradient(circle,#fff 0 2px,transparent 3px) 0 0/28px 28px,radial-gradient(circle,#fff 0 2px,transparent 3px) 14px 14px/28px 28px,var(--rose);}
+.gallery__swatch--boomer{background:linear-gradient(100deg,var(--paper) 0%,var(--blush) 45%,var(--paper) 100%);}
+.gallery__swatch--glazed{background:linear-gradient(120deg,var(--rose) 0%,var(--rose) 38%,#fff9 50%,var(--rose) 62%,var(--rose) 100%);background-size:240% 240%;animation:shine 6s ease-in-out infinite;}
+.gallery__swatch--form{background:radial-gradient(ellipse at 50% 40%,var(--rose),var(--magenta) 70%,var(--magenta-deep) 100%);}
+.gallery__swatch--form::after{content:'';position:absolute;inset:14%;border:1.5px solid rgba(251,241,234,.55);border-radius:50% 50% 46% 46%/62% 62% 38% 38%;}
+.gallery__swatch--solid{background:linear-gradient(150deg,var(--magenta),var(--magenta-deep));}
+@keyframes shine{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+@media (max-width:960px){.gallery__grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.gallery__grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:8.5rem;gap:.9rem;}.gallery__card--tall{grid-row:span 2;}}
+.hand-divider{display:block;width:100%;height:auto;color:var(--line);}
+.reviews{background:var(--paper-2);}
+.reviews__head{text-align:center;max-width:30rem;margin-inline:auto;}
+.reviews__rating{display:flex;align-items:baseline;justify-content:center;gap:.9rem;}
+.reviews__num{font-family:var(--font-display);font-size:var(--step-6);color:var(--magenta);line-height:1;}
+.reviews__head .stars{font-size:1.4rem;}
+.reviews__head p:last-child{color:var(--ink-soft);margin-top:.75rem;}
+.reviews__grid{margin-top:3.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;align-items:start;}
+.review-card{background:var(--paper);border-radius:28px 28px 28px 6px;padding:2rem 1.9rem;box-shadow:var(--shadow);transform:rotate(var(--rot,0deg));}
+.review-card:nth-child(2){transform:translateY(-1.4rem) rotate(var(--rot,0deg));}
+.review-card p{font-size:1rem;color:var(--ink);}
+.review-card footer{margin-top:1.3rem;display:flex;align-items:baseline;gap:.5rem;font-weight:500;font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--magenta);}
+.review-card footer span{font-family:var(--font-body);font-style:normal;font-weight:600;font-size:.75rem;color:var(--ink-faint);}
+@media (max-width:900px){.reviews__grid{grid-template-columns:1fr;max-width:32rem;margin-inline:auto;}.review-card:nth-child(2){transform:none;}}
+.practical__grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(2.5rem,6vw,6rem);}
+.practical__info address{font-style:normal;margin-top:1.4rem;}
+.practical__info address a{font-size:1.3rem;font-family:var(--font-display);color:var(--ink);border-bottom:1px solid var(--line);transition:color .4s var(--ease-soft),border-color .4s var(--ease-soft);}
+.practical__info address a:hover{color:var(--magenta);border-color:var(--magenta);}
+.practical__contact{margin-top:1.6rem;display:flex;flex-direction:column;gap:.6rem;}
+.practical__contact a{font-weight:600;color:var(--ink-soft);transition:color .4s var(--ease-soft);}
+.practical__contact a:hover{color:var(--magenta);}
+.practical__info .btn{margin-top:2.2rem;}
+.practical__note{margin-top:1.4rem;font-size:.82rem;color:var(--ink-faint);max-width:28rem;}
+.practical__hours{background:var(--paper);border-radius:28px;padding:clamp(1.75rem,3vw,2.5rem);box-shadow:var(--shadow);}
+.practical__hours h3{font-size:var(--step-2);margin-bottom:1.2rem;}
+.hours-list li{display:flex;justify-content:space-between;padding-block:.7rem;border-bottom:1px solid var(--line);font-weight:600;font-variant-numeric:tabular-nums;}
+.hours-list li:last-child{border-bottom:0;}
+.hours-list li.is-closed{color:var(--ink-faint);font-weight:500;}
+.hours-list li.is-today{color:var(--magenta);position:relative;padding-left:.9rem;}
+.hours-list li.is-today::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:var(--magenta);}
+@media (max-width:840px){.practical__grid{grid-template-columns:1fr;}}
+.site-footer{background:var(--ink);color:var(--paper);padding-block:3.5rem;}
+.site-footer__inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;}
+.site-footer .brand{color:var(--paper);}
+.site-footer__links{display:flex;flex-wrap:wrap;gap:1.6rem;font-size:.88rem;font-weight:600;}
+.site-footer__links a{opacity:.85;transition:opacity .35s var(--ease-soft);}
+.site-footer__links a:hover{opacity:1;color:var(--rose);}
+.site-footer__meta{width:100%;margin-top:1.6rem;font-size:.76rem;color:rgba(251,241,234,.55);border-top:1px solid rgba(251,241,234,.15);padding-top:1.6rem;}
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:300;padding:.85rem 1.1rem calc(.85rem + env(safe-area-inset-bottom));background:rgba(251,241,234,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(120%);transition:transform .5s var(--ease-water);display:none;}
+.sticky-bar.is-visible{transform:translateY(0);}
+.sticky-bar .btn{width:100%;justify-content:center;}
+@media (max-width:840px){.sticky-bar{display:block;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Hopp til innhold</a>
+<div class="grain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<filter id="grain">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="noise"/>
+<feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0"/>
+</filter>
+<radialGradient id="brandGrad" cx="35%" cy="30%" r="75%">
+<stop offset="0%" stop-color="#F4D0CC"/>
+<stop offset="100%" stop-color="#A0244F"/>
+</radialGradient>
+</defs>
+</svg>
+<header class="site-header" id="top">
+<div class="container site-header__inner">
+<a class="brand" href="#hero">
+<svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path fill="url(#brandGrad)" d="M50 6C68 6 92 20 94 42C96 66 76 94 50 94C24 94 6 68 8 44C10 20 32 6 50 6Z"/></svg>
+<span>JK Nails</span>
+</a>
+<nav class="site-nav" aria-label="Hovedmeny">
+<ul>
+<li><a href="#behandlinger">Behandlinger</a></li>
+<li><a href="#om">Om Kristina</a></li>
+<li><a href="#galleri">Galleri</a></li>
+<li><a href="#anmeldelser">Anmeldelser</a></li>
+<li><a href="#praktisk">Praktisk</a></li>
+</ul>
+</nav>
+<a class="btn btn--primary btn--small" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">Bestill time</a>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="hero">
+<div class="hero__wash" aria-hidden="true">
+<div class="parallax parallax--1" style="--depth:.4"><div class="blob blob--1"></div></div>
+<div class="parallax parallax--2" style="--depth:.7"><div class="blob blob--2"></div></div>
+<div class="parallax parallax--3" style="--depth:.3"><div class="blob blob--3"></div></div>
+<div class="parallax parallax--4" style="--depth:.8"><div class="blob blob--4"></div></div>
+<span class="polish-dot pd--1" style="--c:var(--magenta)"></span>
+<span class="polish-dot pd--2" style="--c:var(--rose)"></span>
+<span class="polish-dot pd--3" style="--c:var(--blush)"></span>
+<span class="polish-dot pd--4" style="--c:var(--ink)"></span>
+<span class="polish-dot pd--5" style="--c:var(--magenta-deep)"></span>
+</div>
+<div class="container hero__content">
+<p class="eyebrow reveal" style="--d:.1s">Gelenegler · Kvadraturen, Kristiansand</p>
+<h1 class="hero__headline">
+<span class="line"><span class="line__inner" style="--d:.3s">Negler som varer</span></span>
+<span class="line"><span class="line__inner" style="--d:.5s"><em class="word-water">lenger</em> enn du tror</span></span>
+</h1>
+<p class="hero__sub reveal" style="--d:.6s">Bygget med dual forms, en teknikk fortsatt få bruker i Norge. Resultatet: negler som sitter i ukesvis, ikke dager.</p>
+<div class="hero__cta reveal" style="--d:.75s">
+<a class="btn btn--primary" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">Bestill time</a>
+<p class="hero__meta"><span class="stars" aria-hidden="true">★★★★★</span><span>4,9</span><span aria-hidden="true">·</span><span>33 anmeldelser</span><span aria-hidden="true">·</span><span>Kristiansand sentrum</span></p>
+</div>
+</div>
+<p class="hero__cue" aria-hidden="true"><i></i>Bla ned</p>
+</section>
+<div class="marquee" aria-hidden="true">
+<div class="marquee__track">
+<span>Dual forms</span><span class="dot-sep">●</span><span>Fransk</span><span class="dot-sep">●</span><span>Ombré</span><span class="dot-sep">●</span><span>Chrome</span><span class="dot-sep">●</span><span>Babyboomer</span><span class="dot-sep">●</span><span>Gelelakk</span><span class="dot-sep">●</span>
+<span>Dual forms</span><span class="dot-sep">●</span><span>Fransk</span><span class="dot-sep">●</span><span>Ombré</span><span class="dot-sep">●</span><span>Chrome</span><span class="dot-sep">●</span><span>Babyboomer</span><span class="dot-sep">●</span><span>Gelelakk</span><span class="dot-sep">●</span>
+</div>
+</div>
+<section class="section services" id="behandlinger" aria-labelledby="behandlinger-tittel">
+<div class="container">
+<div class="services__head reveal">
+<h2 id="behandlinger-tittel" class="services__title">Behandlinger <span class="word-water">og priser</span></h2>
+<p class="services__intro">Alle priser er faste, ingen overraskelser når du setter deg i stolen. Trykk på en behandling for å bestille time direkte.</p>
+</div>
+<div class="services__groups">
+<div class="services__group reveal" style="--d:.05s">
+<h3>Nye negler</h3>
+<ul class="menu">
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Gel på naturnegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t</span><span class="menu__price">1 100 kr</span></span></span>
+<span class="menu__desc">Styrker tynne og myke negler.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Forlengelse av egne negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t 40 min</span><span class="menu__price">1 249 kr</span></span></span>
+<span class="menu__desc">Egne negler bygget lengre og sterkere med gele.</span>
+</a></li>
+</ul>
+</div>
+<div class="services__group reveal" style="--d:.1s">
+<h3>Påfyll og vedlikehold</h3>
+<ul class="menu">
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Gelelakk</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">50 min</span><span class="menu__price">649 kr</span></span></span>
+<span class="menu__desc">For sterke, naturlige negler som bare trenger farge.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Påfyll gelenegler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">1 t 30 min</span><span class="menu__price">1 099 kr</span></span></span>
+<span class="menu__desc">Innen 5 uker fra forrige time.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Reparasjon</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">30 min</span><span class="menu__price">199 kr / negl</span></span></span>
+<span class="menu__desc">Knekt en negl? Ikke vent til neste time.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Fjerning</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">45 min</span><span class="menu__price">399 kr</span></span></span>
+<span class="menu__desc">Skånsom fjerning av gelenegler.</span>
+</a></li>
+</ul>
+</div>
+<div class="services__group reveal" style="--d:.05s">
+<h3>Design</h3>
+<ul class="menu">
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Enkel design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">15 min</span><span class="menu__price">149 kr</span></span></span>
+<span class="menu__desc">Chrome, ombré eller diamanter på inntil 4 fingre.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Avansert design</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">20 min</span><span class="menu__price">249 kr</span></span></span>
+<span class="menu__desc">Fransk, stamping eller dekor på mer enn 4 fingre.</span>
+</a></li>
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Ekstra lange negler</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">20 min</span><span class="menu__price">199 kr</span></span></span>
+<span class="menu__desc">For deg som vil ha enda mer lengde.</span>
+</a></li>
+</ul>
+</div>
+<div class="services__group reveal" style="--d:.1s">
+<h3>Annet</h3>
+<ul class="menu">
+<li><a class="menu__row" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">
+<span class="menu__top"><span class="menu__name">Manikyr</span><span class="menu__leader"></span><span class="menu__meta"><span class="menu__time">30 min</span><span class="menu__price">499 kr</span></span></span>
+<span class="menu__desc">Klassisk manikyr, uten gele.</span>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section about" id="om" aria-labelledby="om-tittel">
+<div class="container about__grid">
+<div class="about__visual reveal">
+<div class="about__portrait" aria-hidden="true"><span>JK</span></div>
+<div class="about__badge">
+<span class="about__badge-num">4</span>
+<span class="about__badge-label">kurs fullført</span>
+</div>
+</div>
+<div class="about__text reveal" style="--d:.1s">
+<p class="eyebrow">Om Kristina</p>
+<h2 id="om-tittel">Én stol, én kunde av gangen</h2>
+<p>Jeg er Kristina, og JK Nails er meg alene. Ingen andre stoler jeg løper mellom, ingen turnus. Bare full oppmerksomhet på hendene dine mens jeg jobber.</p>
+<p>Jeg er sertifisert negletekniker med fire fullførte kurs, og jeg har spesialisert meg på dual forms. Enkelt forklart bygger jeg negelen over en form som fjernes etter herding i stedet for å style rundt en sjablong som blir sittende. Du får negler som er like i formen, sterke der de trenger å være det, og glatte i overgangen mot huden. Det er fortsatt uvanlig i Norge, og jeg er en av få som jobber sånn her i Kristiansand.</p>
+<p>Jeg kurser meg jevnlig og bruker bare produkter jeg selv ville satt navnet mitt på. Kommer du innom, tar det utgangspunkt i dine negler, ikke en mal.</p>
+<ul class="about__creds">
+<li>Sertifisert negletekniker</li>
+<li>Dual forms-spesialist</li>
+<li>4,9 av 33 anmeldelser</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section gallery" id="galleri" aria-labelledby="galleri-tittel">
+<div class="container">
+<div class="gallery__head reveal">
+<h2 id="galleri-tittel">Galleri</h2>
+<p class="gallery__intro">En smakebit på stilene jeg jobber mest med. Ekte bilder av settene finner du på <a href="https://instagram.com/jk_nails_" target="_blank" rel="noopener" style="color:var(--magenta);font-weight:600;">Instagram</a>.</p>
+</div>
+<!-- Disse åtte kortene er fargekomposisjoner i merkevarens palett, ikke bilder. Bytt ut med ekte foto fra @jk_nails_ når kunden gir tilgang til bildebiblioteket sitt. -->
+<div class="gallery__grid">
+<div class="gallery__card gallery__card--tall reveal" style="--rot:-1.4deg">
+<div class="gallery__swatch gallery__swatch--chrome"></div>
+<p class="gallery__label">Chrome<span>Speilblank metallfinish</span></p>
+</div>
+<div class="gallery__card reveal" style="--rot:1deg;--d:.05s">
+<div class="gallery__swatch gallery__swatch--fransk"></div>
+<p class="gallery__label">Fransk<span>Klassisk hvit tipp</span></p>
+</div>
+<div class="gallery__card reveal" style="--rot:-.8deg;--d:.1s">
+<div class="gallery__swatch gallery__swatch--ombre"></div>
+<p class="gallery__label">Ombré<span>Mykt fargeglid</span></p>
+</div>
+<div class="gallery__card gallery__card--tall reveal" style="--rot:1.2deg;--d:.05s">
+<div class="gallery__swatch gallery__swatch--diamant"></div>
+<p class="gallery__label">Diamanter<span>Dekor og glimmer</span></p>
+</div>
+<div class="gallery__card reveal" style="--rot:-1deg">
+<div class="gallery__swatch gallery__swatch--boomer"></div>
+<p class="gallery__label">Babyboomer<span>Diffust fargeglid</span></p>
+</div>
+<div class="gallery__card reveal" style="--rot:.7deg;--d:.1s">
+<div class="gallery__swatch gallery__swatch--glazed"></div>
+<p class="gallery__label">Glazed<span>Glansfull glasseffekt</span></p>
+</div>
+<div class="gallery__card gallery__card--tall reveal" style="--rot:-1.1deg;--d:.05s">
+<div class="gallery__swatch gallery__swatch--form"></div>
+<p class="gallery__label">Dual form<span>Skulptert forlengelse</span></p>
+</div>
+<div class="gallery__card reveal" style="--rot:.9deg">
+<div class="gallery__swatch gallery__swatch--solid"></div>
+<p class="gallery__label">Helfarget gel<span>Rent og rolig</span></p>
+</div>
+</div>
+</div>
+</section>
+<svg class="hand-divider" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26C60 8 120 40 180 24C244 7 296 38 362 22C420 6 478 36 540 20C602 4 654 34 722 22C784 9 836 37 900 21C962 5 1018 33 1080 23C1128 15 1164 25 1200 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+<section class="section reviews" id="anmeldelser" aria-labelledby="anmeldelser-tittel">
+<div class="container">
+<div class="reviews__head reveal">
+<h2 id="anmeldelser-tittel" class="visually-hidden">Anmeldelser</h2>
+<p class="reviews__rating"><span class="reviews__num">4,9</span><span class="stars" aria-hidden="true">★★★★★</span></p>
+<p>Basert på 33 anmeldelser på Google</p>
+</div>
+<div class="reviews__grid">
+<blockquote class="review-card reveal" style="--rot:-1deg">
+<p>«Flinke, gode Kristina, alltid like koselig å komme til deg. Du er ikke bare en vanlig negleteknikker, du er så sykt god med mennesker. Jeg er glad jeg har funnet ei som gir meg de vakreste neglene og samtalene hver gang 💅»</p>
+<footer>Dalia <span>fra Google</span></footer>
+</blockquote>
+<blockquote class="review-card reveal" style="--rot:.8deg;--d:.08s">
+<p>«Aldri opplevd negler som varer så lenge! Hun er nøye, forsiktig og sykt dyktig. Utrolig nøye på å kurse seg, og har kun produkter av god kvalitet. 10/10»</p>
+<footer>Siw <span>fra Google</span></footer>
+</blockquote>
+<blockquote class="review-card reveal" style="--rot:-.6deg;--d:.16s">
+<p>«Kristina er SÅ dyktig og talentfull! I tillegg til å gi så god service. Superfornøyd med neglene og gleder meg til flere sett hos JK Nails ✨»</p>
+<footer>Maiken <span>fra Google</span></footer>
+</blockquote>
+</div>
+</div>
+</section>
+<section class="section practical" id="praktisk" aria-labelledby="praktisk-tittel">
+<div class="container practical__grid">
+<div class="practical__info reveal">
+<span class="eyebrow">Praktisk</span>
+<h2 id="praktisk-tittel">Finn frem</h2>
+<address>
+<a href="https://www.google.com/maps/search/?api=1&query=Festningsgata+34%2C+4614+Kristiansand" target="_blank" rel="noopener">Festningsgata 34<br>4614 Kristiansand</a>
+</address>
+<ul class="practical__contact">
+<li><a href="tel:+4747170317">47 17 03 17</a></li>
+<li><a href="mailto:jknails34@gmail.com">jknails34@gmail.com</a></li>
+<li><a href="https://instagram.com/jk_nails_" target="_blank" rel="noopener">@jk_nails_ på Instagram</a></li>
+</ul>
+<a class="btn btn--primary" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">Bestill time</a>
+<p class="practical__note">Får du ikke til timen din, gi beskjed senest 24 timer før. Da kan noen andre få plassen.</p>
+</div>
+<div class="practical__hours reveal" style="--d:.1s">
+<h3>Åpningstider</h3>
+<ul class="hours-list" id="hoursList">
+<li data-day="1"><span>Mandag</span><span>10:00–17:00</span></li>
+<li data-day="2"><span>Tirsdag</span><span>10:00–17:00</span></li>
+<li data-day="3" class="is-closed"><span>Onsdag</span><span>Stengt</span></li>
+<li data-day="4"><span>Torsdag</span><span>12:00–19:00</span></li>
+<li data-day="5"><span>Fredag</span><span>10:00–15:30</span></li>
+<li data-day="6" class="is-closed"><span>Lørdag</span><span>Stengt</span></li>
+<li data-day="0" class="is-closed"><span>Søndag</span><span>Stengt</span></li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container site-footer__inner">
+<a class="brand" href="#hero">
+<svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path fill="url(#brandGrad)" d="M50 6C68 6 92 20 94 42C96 66 76 94 50 94C24 94 6 68 8 44C10 20 32 6 50 6Z"/></svg>
+<span>JK Nails</span>
+</a>
+<ul class="site-footer__links">
+<li><a href="tel:+4747170317">47 17 03 17</a></li>
+<li><a href="mailto:jknails34@gmail.com">jknails34@gmail.com</a></li>
+<li><a href="https://instagram.com/jk_nails_" target="_blank" rel="noopener">@jk_nails_</a></li>
+</ul>
+<p class="site-footer__meta">JK Nails · Festningsgata 34, 4614 Kristiansand · Org. Jenny Kristina</p>
+</div>
+</footer>
+<div class="sticky-bar" id="stickyBar">
+<a class="btn btn--primary" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">Bestill time</a>
+</div>
+<script>
+(function(){
+"use strict";
+var reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var header=document.querySelector('.site-header');
+var onScroll=function(){header.classList.toggle('is-scrolled',window.scrollY>10);};
+onScroll();
+window.addEventListener('scroll',onScroll,{passive:true});
+
+var revealEls=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window && revealEls.length){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target);}
+    });
+  },{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+  revealEls.forEach(function(el){io.observe(el);});
+} else {
+  revealEls.forEach(function(el){el.classList.add('is-visible');});
+}
+
+var navLinks=document.querySelectorAll('.site-nav a[href^="#"]');
+var sections=[];
+navLinks.forEach(function(a){
+  var sec=document.querySelector(a.getAttribute('href'));
+  if(sec)sections.push({link:a,el:sec});
+});
+if('IntersectionObserver' in window && sections.length){
+  var navIo=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      var match=sections.find(function(s){return s.el===entry.target;});
+      if(match && entry.isIntersecting){
+        navLinks.forEach(function(a){a.classList.remove('is-active');});
+        match.link.classList.add('is-active');
+      }
+    });
+  },{rootMargin:'-45% 0px -45% 0px'});
+  sections.forEach(function(s){navIo.observe(s.el);});
+}
+
+var hero=document.getElementById('hero');
+var stickyBar=document.getElementById('stickyBar');
+if(hero && stickyBar && 'IntersectionObserver' in window){
+  var barIo=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){stickyBar.classList.toggle('is-visible',!entry.isIntersecting);});
+  },{threshold:0});
+  barIo.observe(hero);
+}
+
+var wash=document.querySelector('.hero__wash');
+if(wash && !reduceMotion && window.matchMedia('(pointer: fine)').matches){
+  var ticking=false,mx=0,my=0;
+  window.addEventListener('mousemove',function(e){
+    var w=window.innerWidth,h=window.innerHeight;
+    mx=((e.clientX/w)-.5)*40;
+    my=((e.clientY/h)-.5)*40;
+    if(!ticking){
+      window.requestAnimationFrame(function(){
+        wash.style.setProperty('--mx',mx.toFixed(2));
+        wash.style.setProperty('--my',my.toFixed(2));
+        ticking=false;
+      });
+      ticking=true;
+    }
+  },{passive:true});
+}
+
+var today=new Date().getDay();
+var todayRow=document.querySelector('.hours-list li[data-day="'+today+'"]');
+if(todayRow)todayRow.classList.add('is-today');
+})();
+</script></body>
+</html>
