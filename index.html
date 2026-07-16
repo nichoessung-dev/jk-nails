@@ -86,7 +86,7 @@ html{scrollbar-color:var(--rose) var(--paper-2);scrollbar-width:thin;}
 .site-nav a:hover::after,.site-nav a.is-active::after{right:0;}
 .site-nav a.is-active{color:var(--magenta);}
 @media (max-width:840px){.site-nav{display:none;}}
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-block:calc(var(--header-h) + 3rem) 4rem;isolation:isolate;}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;justify-content:safe center;overflow:hidden;padding-block:calc(var(--header-h) + 2rem) 3rem;isolation:isolate;}
 .hero__wash{position:absolute;inset:0;z-index:-1;overflow:hidden;background:var(--paper);}
 .parallax{position:absolute;transform:translate(calc(var(--mx,0) * var(--depth,.5) * 1px),calc(var(--my,0) * var(--depth,.5) * 1px));transition:transform 1.4s var(--ease-water);}
 .blob{position:absolute;inset:0;border-radius:42% 58% 63% 37%/41% 44% 56% 59%;filter:blur(50px);opacity:.55;will-change:transform,border-radius;animation:blobMorphA 52s var(--ease-soft) infinite;}
@@ -110,7 +110,7 @@ html{scrollbar-color:var(--rose) var(--paper-2);scrollbar-width:thin;}
 @keyframes floatDot{0%,100%{transform:translateY(0) translateX(0);}50%{transform:translateY(-16px) translateX(6px);}}
 .hero__content{max-width:42rem;}
 .eyebrow{font-size:var(--step--1);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--magenta);margin-bottom:1.1rem;display:block;}
-.hero__headline{font-size:var(--step-6);}
+.hero__headline{font-size:clamp(2.25rem,6.4vw,5.75rem);font-size:clamp(2.25rem,min(6.4vw,8.8svh),5.75rem);line-height:1.04;}
 .hero__headline .line{display:block;}
 section[id]{scroll-margin-top:var(--header-h);}
 .hero__headline .line__inner{display:block;}
@@ -125,6 +125,13 @@ section[id]{scroll-margin-top:var(--header-h);}
 .hero__cue i{display:block;width:1px;height:34px;background:linear-gradient(var(--ink-faint),transparent);animation:cuePulse 2.6s ease-in-out infinite;}
 @keyframes cuePulse{0%,100%{opacity:.3;}50%{opacity:1;}}
 @media (max-width:840px){.hero__cue{display:none;}}
+@media (max-height:760px){
+  .hero{padding-block:calc(var(--header-h) + 1rem) 1.5rem;}
+  .hero .eyebrow{margin-bottom:.55rem;}
+  .hero__sub{margin-top:1rem;}
+  .hero__cta{margin-top:1.5rem;}
+  .hero__cue{display:none;}
+}
 .marquee{position:relative;border-block:1px solid var(--line);padding-block:1.4rem;overflow:hidden;background:var(--paper-2);}
 .marquee__track{display:flex;width:max-content;gap:2.5rem;animation:marqueeScroll 34s linear infinite;}
 .marquee__track span{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:clamp(1.3rem,1rem + 2vw,2.1rem);white-space:nowrap;color:transparent;-webkit-text-stroke:1px var(--ink);}
