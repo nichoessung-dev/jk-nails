@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JK Nails | Neglesalong i Kristiansand | Gelenegler med dual forms</title>
-<meta name="description" content="JK Nails er en neglesalong i Kvadraturen, Kristiansand. Kristina er sertifisert negletekniker og en av få i Norge som jobber med dual forms. Book time i dag.">
+<meta name="description" content="JK Nails er en neglesalong i Kvadraturen, Kristiansand. Kristina er sertifisert negletekniker og en av få i Norge som jobber med dual forms. Bestill time i dag.">
 <meta name="theme-color" content="#A0244F">
 <meta property="og:title" content="JK Nails | Neglesalong i Kristiansand">
 <meta property="og:description" content="Gelenegler med dual forms. Sertifisert negletekniker i Kvadraturen, Kristiansand. 4,9 av 33 anmeldelser.">
@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3CradialGradient id='g' cx='35%25' cy='30%25' r='75%25'%3E%3Cstop offset='0%25' stop-color='%23F4D0CC'/%3E%3Cstop offset='100%25' stop-color='%23A0244F'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23g)' d='M50 6C68 6 92 20 94 42C96 66 76 94 50 94C24 94 6 68 8 44C10 20 32 6 50 6Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#FBF1EA;
@@ -85,11 +85,11 @@ html{scrollbar-color:var(--rose) var(--paper-2);scrollbar-width:thin;}
 .site-nav a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--magenta);transition:right .45s var(--ease-water);}
 .site-nav a:hover::after,.site-nav a.is-active::after{right:0;}
 .site-nav a.is-active{color:var(--magenta);}
-@media (max-width:840px){.site-nav{display:none;}}
+@media (max-width:840px){.site-nav{display:none;}.site-header .btn--small{min-height:44px;padding-block:.85em;}}
 .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;justify-content:safe center;overflow:hidden;padding-block:calc(var(--header-h) + 2rem) 3rem;isolation:isolate;}
 .hero__wash{position:absolute;inset:0;z-index:-1;overflow:hidden;background:var(--paper);}
 .parallax{position:absolute;transform:translate(calc(var(--mx,0) * var(--depth,.5) * 1px),calc(var(--my,0) * var(--depth,.5) * 1px));transition:transform 1.4s var(--ease-water);}
-.blob{position:absolute;inset:0;border-radius:42% 58% 63% 37%/41% 44% 56% 59%;filter:blur(50px);opacity:.55;will-change:transform,border-radius;animation:blobMorphA 52s var(--ease-soft) infinite;}
+.blob{position:absolute;inset:0;border-radius:42% 58% 63% 37%/41% 44% 56% 59%;filter:blur(50px);opacity:.55;animation:blobMorphA 52s var(--ease-soft) infinite;}
 .parallax--1{width:52vw;height:52vw;top:-16%;left:-10%;}
 .parallax--2{width:40vw;height:40vw;top:4%;right:-14%;}
 .parallax--3{width:36vw;height:36vw;bottom:-18%;left:20%;}
@@ -116,11 +116,15 @@ section[id]{scroll-margin-top:var(--header-h);}
 .hero__headline .line__inner{display:block;}
 .js .hero__headline .line__inner{opacity:0;transform:translateY(100%) rotate(1deg);animation:lineUp 1.3s var(--ease-water) forwards;animation-delay:var(--d,0s);}
 @keyframes lineUp{to{opacity:1;transform:translateY(0) rotate(0);}}
-.word-water{font-style:italic;background:linear-gradient(100deg,var(--magenta) 0%,var(--magenta-deep) 50%,var(--magenta) 100%);background-clip:text;-webkit-background-clip:text;color:var(--magenta);}
+.word-water{font-style:italic;background:linear-gradient(102deg,var(--magenta-deep) 0%,var(--magenta) 36%,#C33A66 60%,var(--magenta-deep) 100%);background-clip:text;-webkit-background-clip:text;color:var(--magenta);}
 .hero__sub{font-size:clamp(1.05rem,.95rem + .5vw,1.25rem);color:var(--ink-soft);margin-top:1.6rem;max-width:34rem;}
 .hero__cta{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.6rem;}
-.hero__meta{font-size:var(--step--1);color:var(--ink-soft);display:flex;align-items:center;gap:.4em;}
+.hero__meta{font-size:var(--step--1);color:var(--ink-soft);display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .5em;}
 .stars{color:var(--magenta);letter-spacing:.05em;}
+.hero__status{display:none;align-items:center;gap:.55em;margin-top:1.6rem;font-size:.82rem;font-weight:600;color:var(--ink-soft);background:rgba(251,241,234,.55);border:1px solid var(--line);border-radius:100px;padding:.45em .95em;width:fit-content;}
+.hero__status[data-open]{display:inline-flex;}
+.hero__status::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--ink-faint);flex-shrink:0;}
+.hero__status[data-open="true"]::before{background:var(--magenta);box-shadow:0 0 0 3px rgba(160,36,79,.18);}
 .hero__cue{position:absolute;left:clamp(1.25rem,5vw,3rem);bottom:2rem;display:flex;align-items:center;gap:.6rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);}
 .hero__cue i{display:block;width:1px;height:34px;background:linear-gradient(var(--ink-faint),transparent);animation:cuePulse 2.6s ease-in-out infinite;}
 @keyframes cuePulse{0%,100%{opacity:.3;}50%{opacity:1;}}
@@ -178,7 +182,7 @@ section[id]{scroll-margin-top:var(--header-h);}
 .gallery__card:hover{transform:rotate(0deg) translateY(-6px) scale(1.015);box-shadow:0 26px 50px -20px rgba(43,22,32,.4);}
 .gallery__card--tall{grid-row:span 2;}
 .gallery__swatch{position:absolute;inset:0;}
-.gallery__label{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.15rem 1.05rem;background:linear-gradient(0deg,rgba(43,22,32,.6),transparent 70%);color:var(--paper);font-weight:700;font-size:.92rem;}
+.gallery__label{position:absolute;left:0;right:0;bottom:0;padding:1.1rem 1.15rem 1.05rem;background:linear-gradient(0deg,rgba(43,22,32,.72),rgba(43,22,32,.35) 55%,transparent 90%);color:var(--paper);font-weight:700;font-size:.92rem;}
 .gallery__label span{display:block;font-weight:500;font-size:.7rem;opacity:.9;margin-top:.15rem;}
 .gallery__swatch--chrome{background:linear-gradient(120deg,var(--paper) 0%,var(--blush) 22%,var(--rose) 42%,var(--paper) 56%,var(--magenta) 78%,var(--blush) 100%);background-size:220% 220%;animation:shine 9s ease-in-out infinite;}
 .gallery__swatch--fransk{background:var(--blush);}
@@ -212,7 +216,7 @@ section[id]{scroll-margin-top:var(--header-h);}
 .practical__info address a{font-size:1.3rem;font-family:var(--font-display);color:var(--ink);border-bottom:1px solid var(--line);transition:color .4s var(--ease-soft),border-color .4s var(--ease-soft);}
 .practical__info address a:hover{color:var(--magenta);border-color:var(--magenta);}
 .practical__contact{margin-top:1.6rem;display:flex;flex-direction:column;gap:.6rem;}
-.practical__contact a{font-weight:600;color:var(--ink-soft);transition:color .4s var(--ease-soft);}
+.practical__contact a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;color:var(--ink-soft);transition:color .4s var(--ease-soft);}
 .practical__contact a:hover{color:var(--magenta);}
 .practical__info .btn{margin-top:2.2rem;}
 .practical__note{margin-top:1.4rem;font-size:.82rem;color:var(--ink-faint);max-width:28rem;}
@@ -235,6 +239,10 @@ section[id]{scroll-margin-top:var(--header-h);}
 .sticky-bar.is-visible{transform:translateY(0);}
 .sticky-bar .btn{width:100%;justify-content:center;}
 @media (max-width:840px){.sticky-bar{display:block;}}
+@media (max-width:840px){
+  .blob,.about__portrait,.polish-dot,.gallery__swatch--chrome,.gallery__swatch--glazed{animation:none;}
+  .site-footer{padding-bottom:calc(3.5rem + 5.25rem + env(safe-area-inset-bottom));}
+}
 </style>
 </head>
 <body>
@@ -292,8 +300,9 @@ section[id]{scroll-margin-top:var(--header-h);}
 <p class="hero__sub reveal" style="--d:.6s">Bygget med dual forms, en teknikk fortsatt få bruker i Norge. Resultatet: negler som sitter i ukesvis, ikke dager.</p>
 <div class="hero__cta reveal" style="--d:.75s">
 <a class="btn btn--primary" href="https://jknails.setmore.com/book" target="_blank" rel="noopener">Bestill time</a>
-<p class="hero__meta"><span class="stars" aria-hidden="true">★★★★★</span><span>4,9</span><span aria-hidden="true">·</span><span>33 anmeldelser</span><span aria-hidden="true">·</span><span>Kristiansand sentrum</span></p>
+<p class="hero__meta"><span class="stars" aria-hidden="true">★★★★★</span><span class="visually-hidden">4,9 av 5 stjerner.</span><span aria-hidden="true">4,9</span><span aria-hidden="true">·</span><span>33 anmeldelser</span><span aria-hidden="true">·</span><span>Kristiansand sentrum</span></p>
 </div>
+<p class="hero__status" id="heroStatus"></p>
 </div>
 <p class="hero__cue" aria-hidden="true"><i></i>Bla ned</p>
 </section>
@@ -390,7 +399,7 @@ section[id]{scroll-margin-top:var(--header-h);}
 <p class="eyebrow">Om Kristina</p>
 <h2 id="om-tittel">Én stol, én kunde av gangen</h2>
 <p>Jeg er Kristina, og JK Nails er meg alene. Ingen andre stoler jeg løper mellom, ingen turnus. Bare full oppmerksomhet på hendene dine mens jeg jobber.</p>
-<p>Jeg er sertifisert negletekniker med fire fullførte kurs, og jeg har spesialisert meg på dual forms. Enkelt forklart bygger jeg negelen over en form som fjernes etter herding i stedet for å style rundt en sjablong som blir sittende. Du får negler som er like i formen, sterke der de trenger å være det, og glatte i overgangen mot huden. Det er fortsatt uvanlig i Norge, og jeg er en av få som jobber sånn her i Kristiansand.</p>
+<p>Jeg er sertifisert negletekniker med fire fullførte kurs, og jeg har spesialisert meg på dual forms. Enkelt forklart bygger jeg neglen over en form som fjernes etter herding i stedet for å style rundt en sjablong som blir sittende. Du får negler som er like i formen, sterke der de trenger å være det, og glatte i overgangen mot huden. Det er fortsatt uvanlig i Norge, og jeg er en av få som jobber sånn her i Kristiansand.</p>
 <p>Jeg kurser meg jevnlig og bruker bare produkter jeg selv ville satt navnet mitt på. Kommer du innom, tar det utgangspunkt i dine negler, ikke en mal.</p>
 <ul class="about__creds">
 <li>Sertifisert negletekniker</li>
@@ -448,7 +457,7 @@ section[id]{scroll-margin-top:var(--header-h);}
 <div class="container">
 <div class="reviews__head reveal">
 <h2 id="anmeldelser-tittel" class="visually-hidden">Anmeldelser</h2>
-<p class="reviews__rating"><span class="reviews__num">4,9</span><span class="stars" aria-hidden="true">★★★★★</span></p>
+<p class="reviews__rating"><span class="reviews__num" aria-hidden="true">4,9</span><span class="stars" aria-hidden="true">★★★★★</span><span class="visually-hidden">4,9 av 5 stjerner</span></p>
 <p>Basert på 33 anmeldelser på Google</p>
 </div>
 <div class="reviews__grid">
@@ -509,7 +518,7 @@ section[id]{scroll-margin-top:var(--header-h);}
 <li><a href="mailto:jknails34@gmail.com">jknails34@gmail.com</a></li>
 <li><a href="https://instagram.com/jk_nails_" target="_blank" rel="noopener">@jk_nails_</a></li>
 </ul>
-<p class="site-footer__meta">JK Nails · Festningsgata 34, 4614 Kristiansand · Org. Jenny Kristina</p>
+<p class="site-footer__meta">JK Nails · Festningsgata 34, 4614 Kristiansand · Innehaver Jenny Kristina</p>
 </div>
 </footer>
 <div class="sticky-bar" id="stickyBar">
@@ -555,13 +564,13 @@ if('IntersectionObserver' in window && sections.length){
   sections.forEach(function(s){navIo.observe(s.el);});
 }
 
-var hero=document.getElementById('hero');
+var heroCta=document.querySelector('.hero__cta');
 var stickyBar=document.getElementById('stickyBar');
-if(hero && stickyBar && 'IntersectionObserver' in window){
+if(heroCta && stickyBar && 'IntersectionObserver' in window){
   var barIo=new IntersectionObserver(function(entries){
     entries.forEach(function(entry){stickyBar.classList.toggle('is-visible',!entry.isIntersecting);});
   },{threshold:0});
-  barIo.observe(hero);
+  barIo.observe(heroCta);
 }
 
 var wash=document.querySelector('.hero__wash');
@@ -585,6 +594,26 @@ if(wash && !reduceMotion && window.matchMedia('(pointer: fine)').matches){
 var today=new Date().getDay();
 var todayRow=document.querySelector('.hours-list li[data-day="'+today+'"]');
 if(todayRow)todayRow.classList.add('is-today');
+
+var DAYS=['søndag','mandag','tirsdag','onsdag','torsdag','fredag','lørdag'];
+function fmtT(m){var h=Math.floor(m/60),mm=m%60;return h+':'+(mm<10?'0'+mm:''+mm);}
+function heroStatus(){
+  var el=document.getElementById('heroStatus');
+  if(!el)return;
+  var map={};
+  document.querySelectorAll('#hoursList li').forEach(function(li){
+    var d=+li.getAttribute('data-day');
+    var cell=li.children[1]?li.children[1].textContent:'';
+    var mt=cell.match(/(\d{1,2}):(\d{2})\D+(\d{1,2}):(\d{2})/);
+    map[d]=mt?[(+mt[1])*60+(+mt[2]),(+mt[3])*60+(+mt[4])]:null;
+  });
+  var now=new Date(),day=now.getDay(),cur=now.getHours()*60+now.getMinutes(),th=map[day],res=null;
+  if(th && cur>=th[0] && cur<th[1])res={open:true,text:'Åpent nå, til '+fmtT(th[1])};
+  else if(th && cur<th[0])res={open:false,text:'Åpner i dag '+fmtT(th[0])};
+  else{for(var i=1;i<=7;i++){var nd=(day+i)%7,nh=map[nd];if(nh){res={open:false,text:'Åpner '+(i===1?'i morgen':DAYS[nd])+' '+fmtT(nh[0])};break;}}}
+  if(res){el.textContent=res.text;el.setAttribute('data-open',res.open);}
+}
+heroStatus();
 })();
 </script></body>
 </html>
